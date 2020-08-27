@@ -2,7 +2,7 @@ rm -rf ./TemplateBot
 
 git clone https://github.com/vcokltfre/TemplateBot
 
-echo "Enter a name for your bot: "
+echo "Enter a name for your bot: (MUST BE ONE WORD)"
 read bot_name
 
 mv ./TemplateBot/ ./$bot_name/
