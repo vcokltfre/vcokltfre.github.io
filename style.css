@@ -1,9 +1,11 @@
-.mainheaders {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+body {
+    background-color: #101010;
+    color: #ffff00;
     font-size: 32px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
 }
 
-body {
-    background-color: #222222;
+code {
+    margin-left: 1%;
 }
