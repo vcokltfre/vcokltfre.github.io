@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+:root {
+  font-size: calc(16px + 1vw);
+}
+
+body {
+  background-color: #101010;
+  color: #ffff00;
+
+  font-family: "Courier New", Courier, monospace;
+
+  text-align: center;
+
+  padding: .5rem;
+}
+
+h1 {
+  text-shadow: #555500 12px 9px 8px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: .5em 0;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+.card {
+  padding: 1rem;
+  width: 85%;
+  margin: 1.5rem auto;
+  border: 1px solid;
+  border-radius: .5rem;
+  box-shadow: #555500 0 .25rem 1rem;
+}
+
+code {
+  color: #55ff00;
+  word-wrap: break-word;
+}
