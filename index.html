@@ -1,105 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <title>vcokltfre</title>
-</head>
+  </head>
 
-<body>
-    <header>
-        <h1>vcokltfre</h1>
-        <p>Hi! I make things, usually Discord bots.</p>
-    </header>
-
-    <main>
-        <div class="card">
-            <p>
-                To set up
-                <a href="https://github.com/vcokltfre/template-bot-v2" target="_blank" rel="noopener">my template bot</a>,
-                run this command:
-            </p>
-            <code onclick="selectText(event.currentTarget)" style="cursor: pointer;"
-                title="Click to select">pip3 install templatebot</code>
-        </div>
-
-        <h4>Other links</h4>
-        <a href="https://github.com/vcokltfre" target="_blank" rel="noopener">GitHub</a><br>
-        <a href="https://ctf.vcokltf.re/" target="_blank" rel="noopener">Elemental CTF</a><br>
-
-    </main>
-
-    <script src="/static/js/main.js" async defer></script>
-
-
-    <!--
-
- _        _        _        _        _        _        _        _        _        _
-| |      | |      | |      | |      | |      | |      | |      | |      | |      | |
-| | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _
-| || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \
-| | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |
-|_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|
-
- _        _        _        _        _        _        _        _        _        _
-| |      | |      | |      | |      | |      | |      | |      | |      | |      | |
-| | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _
-| || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \
-| | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |
-|_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|
-
- _        _        _        _        _        _        _        _        _        _
-| |      | |      | |      | |      | |      | |      | |      | |      | |      | |
-| | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _
-| || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \
-| | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |
-|_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|
-
- _        _        _        _        _        _        _        _        _        _
-| |      | |      | |      | |      | |      | |      | |      | |      | |      | |
-| | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _
-| || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \
-| | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |
-|_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|
-
- _        _        _        _        _        _        _        _        _        _
-| |      | |      | |      | |      | |      | |      | |      | |      | |      | |
-| | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _
-| || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \
-| | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |
-|_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|
-
- _        _        _        _        _        _        _        _        _        _
-| |      | |      | |      | |      | |      | |      | |      | |      | |      | |
-| | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _    | | _
-| || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \   | || \
-| | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |  | | | |
-|_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|  |_| |_|
-
-    -->
-    
-<!--
-  _    _                                   
- | |  | |                                  
- | |__| | __ _ _ __  _ __  _   _           
- |  __  |/ _` | '_ \| '_ \| | | |          
- | |  | | (_| | |_) | |_) | |_| |          
- |_|  |_|\__,_| .__/| .__/ \__, |          
-              | |   | |     __/ |          
-  ____  _     |_|  _|_|    |___/           
- |  _ \(_)    | | | |       | |            
- | |_) |_ _ __| |_| |__   __| | __ _ _   _ 
- |  _ <| | '__| __| '_ \ / _` |/ _` | | | |
- | |_) | | |  | |_| | | | (_| | (_| | |_| |
- |____/|_|_|   \__|_| |_|\__,_|\__,_|\__, |
- |__   __|                            __/ |
-    | | ___  _ __ ___                |___/ 
-    | |/ _ \| '_ ` _ \                     
-    | | (_) | | | | | |                    
-    |_|\___/|_| |_| |_|                    
--->
-</body>
-
+  <body>
+    <div class="me">
+      <img src="static/vcokltfre.gif">
+      <h1>vcokltfre</h1>
+      <h2>Student • Developer • Moderator</h2>
+      <div class="icons">
+        <a href="https://github.com/vcokltfre"><img src="static/github.png"></a>
+        <a href="https://discord.gg/xArErFf"><img src="static/discord.png"></a>
+        <a href="https://minecraftathome.com"><img src="static/mch.png"></a>
+      </div>
+    </div>
+  </body>
 </html>
+
+<style>
+  body {
+    background: #14191f;
+    font-family: 'Roboto Mono', monospace;
+    color: #87ceeb;
+  }
+
+  .me {
+    text-align: center;
+  }
+
+  .me img {
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+  }
+
+  .me h1 {
+    font-size: 400%;
+  }
+
+  .me h2 {
+    font-size: 200%;
+  }
+
+  .icons img {
+    width: 7%;
+    display: inline-block;
+  }
+</style>
