@@ -26,11 +26,12 @@
         <p1>
           I'm an 18 year old software developer and student from Wales, UK.
           Primarily I develop software in Python, generally APIs using FastAPI
-          and bots using discord.py. I also like to moderate Discord servers, such as
+          and bots using discord.py. I spend a lot of time on Discord, and over
+          my time on the platform I've come to moderate several Discord servers, such as
           <a href="https://minecraftathome.com">Minecraft@Home</a>
           and
-          <a href="https://gtaodiscord.com">GTA Online</a>.
-          I'm also staff on the <a href="https://pydis.com">Python Discord</a> server,
+          <a href="https://gtaodiscord.com">GTA Online</a>,
+          and I'm a staff member on the <a href="https://pydis.com">Python Discord</a> server,
           where I help out in my spare time.
           <br><br><p1 class="point">•</p1><br><br>
         </p1>
@@ -45,7 +46,11 @@
     </div>
 
     <div class="footer">
-      <p1>Designed and created by vcokltfre with blood, sweat, and a hatred of CSS.</p1>
+      <p1>Designed and created by <a class="fname" href="https://github.com/vcokltfre/vcokltfre.github.io">vcokltfre</a> with blood, sweat, and a hatred of CSS.</p1>
+    </div>
+
+    <div class="button-container">
+      <button onClick="goDown()" id="go-down"><img class="go-down" src="/static/down.png"></button>
     </div>
   </body>
 </html>
@@ -85,7 +90,7 @@
   }
 
   .about {
-    background: #271f29;
+    background: #13293D;
     padding: 3%;
     padding-bottom: 5%;
   }
@@ -98,6 +103,7 @@
   .footer {
     padding-top: 1%;
     padding-bottom: 1%;
+    font-size: .8em;
   }
 
   a {
@@ -119,6 +125,38 @@
   .projects .project :hover {
     transition-duration: .2s;
     font-size: 101%;
+  }
+
+  .fname {
+    font-weight: 900;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+  }
+
+  #go-down {
+    position: fixed;
+    bottom: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    border-radius: 200px;
+    max-height: 5rem;
+    max-width: 5rem;
+  }
+
+  .go-down {
+    height: 100%;
+    width: 100%;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 </style>
 
@@ -145,4 +183,23 @@
   shuffle(possibles);
 
   sdm.innerText = possibles.join(" • ");
+</script>
+
+<script>
+  button = document.getElementById("go-down");
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      button.style.display = "none";
+    } else {
+      button.style.display = "block";
+    }
+  }
+
+  function goDown() {
+    document.body.scrollTop = 3000;
+    document.documentElement.scrollTop = 3000;
+  }
 </script>
