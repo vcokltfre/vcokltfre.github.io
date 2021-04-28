@@ -19,6 +19,29 @@
         <a href="https://minecraftathome.com"><img src="static/mch.png"></a>
       </div>
     </div>
+
+    <div class="about">
+      <div class="width">
+        <h3>About Me</h3>
+        <p1>
+          I'm an 18 year old software developer and student from Wales, UK. 
+          Primarily I develop software in Python, generally APIs using FastAPI 
+          and bots using discord.py.
+          <br><br><p1 class="point">•</p1><br><br>
+        </p1>
+        <div class="projects">
+          <p1>Some of my projects include:<br></p1>
+          <p1 class="project"><br>- A Discord library: <a href="https://github.com/vcokltfre/corded">Corded</a></p1>
+          <p1 class="project"><br>- A procedural ducky generation API: <a href="https://github.com/python-discord/quackstack">Quackstack</a></p1>
+          <p1 class="project"><br>- A template Discord bot for discord.py: <a href="https://github.com/vcokltfre/yatb">Yet Another Template Bot</a></p1>
+          <p1><br><br>And many, many more projects on <a href="https://github.com/vcokltfre">my GitHub.</a></p1>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p1>Designed and created by vcokltfre with blood, sweat, and a hatred of CSS.</p1>
+    </div>
   </body>
 </html>
 
@@ -27,10 +50,12 @@
     background: #14191f;
     font-family: 'Roboto Mono', monospace;
     color: #87ceeb;
+    text-align: center;
+    margin: 0;
   }
 
   .me {
-    text-align: center;
+    padding-bottom: 3%;
   }
 
   .me img {
@@ -52,5 +77,42 @@
   .icons img {
     width: 7%;
     display: inline-block;
+  }
+
+  .about {
+    background: #271f29;
+    padding: 3%;
+    padding-bottom: 5%;
+  }
+
+  .about .width {
+    max-width: 40%;
+    padding-left: 30%;
+  }
+
+  .footer {
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  a {
+    font-weight: 900;
+  }
+
+  a:link {
+    color: #87ceeb;
+  }
+
+  a:visited {
+    color: #87ceeb;
+  }
+
+  .point {
+    font-size: 200%;
+  }
+
+  .projects .project :hover {
+    transition-duration: .2s;
+    font-size: 101%;
   }
 </style>
