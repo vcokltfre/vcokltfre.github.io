@@ -12,7 +12,7 @@
     <div class="me">
       <img src="static/logo.png">
       <h1>vcokltfre</h1>
-      <h2>Student • Developer • Moderator</h2>
+      <h2 id="sdm"></h2>
       <div class="icons">
         <a href="https://github.com/vcokltfre"><img src="static/github.png"></a>
         <a href="https://discord.gg/xArErFf"><img src="static/discord.png"></a>
@@ -24,9 +24,14 @@
       <div class="width">
         <h3>About Me</h3>
         <p1>
-          I'm an 18 year old software developer and student from Wales, UK. 
-          Primarily I develop software in Python, generally APIs using FastAPI 
-          and bots using discord.py.
+          I'm an 18 year old software developer and student from Wales, UK.
+          Primarily I develop software in Python, generally APIs using FastAPI
+          and bots using discord.py. I also like to moderate Discord servers, such as
+          <a href="https://minecraftathome.com">Minecraft@Home</a>
+          and
+          <a href="https://gtaodiscord.com">GTA Online</a>.
+          I'm also staff on the <a href="https://pydis.com">Python Discord</a> server,
+          where I help out in my spare time.
           <br><br><p1 class="point">•</p1><br><br>
         </p1>
         <div class="projects">
@@ -55,7 +60,7 @@
   }
 
   .me {
-    padding-bottom: 3%;
+    min-height: 100vh;
   }
 
   .me img {
@@ -116,3 +121,28 @@
     font-size: 101%;
   }
 </style>
+
+<script>
+  function shuffle(array) {  // Thanks, https://stackoverflow.com/a/2450976/9974823
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    while (0 !== currentIndex) {
+
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+  }
+
+  let sdm = document.getElementById("sdm");
+
+  possibles = ["Student", "Developer", "Moderator"]
+  shuffle(possibles);
+
+  sdm.innerText = possibles.join(" • ");
+</script>
