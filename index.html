@@ -3,20 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>vcokltfre</title>
   </head>
 
   <body>
     <div class="me">
-      <img src="static/logo.png">
+      <img src="static/logo.png" />
       <h1>vcokltfre</h1>
       <h2 id="sdm"></h2>
+      <h6>(And definitely not a web developer!)</h6>
       <div class="icons">
-        <a href="https://github.com/vcokltfre"><img src="static/github.png"></a>
-        <a href="https://discord.gg/xArErFf"><img src="static/discord.png"></a>
-        <a href="https://minecraftathome.com"><img src="static/mch.png"></a>
+        <a href="https://github.com/vcokltfre"
+          ><img src="static/github.png"
+        /></a>
+        <a href="https://discord.gg/xArErFf"
+          ><img src="static/discord.png"
+        /></a>
+        <a href="https://minecraftathome.com"><img src="static/mch.png" /></a>
       </div>
     </div>
 
@@ -24,36 +32,55 @@
       <div class="width">
         <h3>About Me</h3>
         <p1>
-          I'm an 18 year old software developer from Wales.
-          Primarily I develop software in Python, generally APIs using FastAPI
-          and bots using discord.py. I spend a lot of time on Discord, and over
-          my time on the platform I've come to moderate several Discord servers, including
+          I'm an 18 year old software developer from Wales. Primarily I develop
+          software in Python, generally APIs using FastAPI and bots using
+          discord.py. I spend a lot of time on Discord, and over my time on the
+          platform I've come to moderate several Discord servers, including
           <a href="https://minecraftathome.com">Minecraft@Home</a>
           and
-          <a href="https://gtaodiscord.com">GTA Online</a>,
-          and I'm a staff member on the <a href="https://pydis.com">Python Discord</a> server
-          where I help out in my spare time.
-          <br><br><p1 class="point">•</p1><br><br>
+          <a href="https://gtaodiscord.com">GTA Online</a>, and I'm a staff
+          member on the <a href="https://pydis.com">Python Discord</a> server
+          where I help out in my spare time. <br /><br /><p1 class="point">•</p1
+          ><br /><br />
         </p1>
         <div class="projects">
-          <p1>Some projects I've made and helped make:<br></p1>
-          <p1 class="project"><br>- <a href="https://vcokltfre.dev">A Discord bot tuorial</a></p1>
-          <p1 class="project"><br>- A Discord library: <a href="https://github.com/vcokltfre/corded">Corded</a></p1>
-          <p1 class="project"><br>- A procedural ducky generation API: <a href="https://github.com/python-discord/quackstack">Quackstack</a></p1>
-          <p1 class="project"><br>- A template Discord bot for discord.py: <a href="https://github.com/vcokltfre/yatb">Yet Another Template Bot</a></p1>
-          <p1><br><br>And many, many more projects on <a href="https://github.com/vcokltfre">my GitHub</a></p1>.
+          <p1>Some projects I've made and helped make:<br /></p1>
+          <p1 class="project"
+            ><br />-
+            <a href="https://vcokltfre.dev">A Discord bot tuorial</a></p1
+          >
+          <p1 class="project"
+            ><br />- A Discord library:
+            <a href="https://github.com/vcokltfre/corded">Corded</a></p1
+          >
+          <p1 class="project"
+            ><br />- A procedural ducky generation API:
+            <a href="https://github.com/python-discord/quackstack"
+              >Quackstack</a
+            ></p1
+          >
+          <p1 class="project"
+            ><br />- A template Discord bot for discord.py:
+            <a href="https://github.com/vcokltfre/yatb"
+              >Yet Another Template Bot</a
+            ></p1
+          >
+          <p1
+            ><br /><br />And many, many more projects on
+            <a href="https://github.com/vcokltfre">my GitHub</a></p1
+          >.
         </div>
       </div>
     </div>
 
     <div class="footer">
-      <p1>Designed and created by
-        <a class="fname" href="https://github.com/vcokltfre/vcokltfre.github.io">vcokltfre</a>
-        with blood, sweat, and an ever growing hatred of CSS.</p1>
-    </div>
-
-    <div class="button-container">
-      <button onClick="goDown()" id="go-down"><img class="go-down" src="/static/down.png"></button>
+      <p1
+        >Designed and created by
+        <a class="fname" href="https://github.com/vcokltfre/vcokltfre.github.io"
+          >vcokltfre</a
+        >
+        with blood, sweat, and an ever growing hatred of CSS.</p1
+      >
     </div>
   </body>
 </html>
@@ -61,7 +88,7 @@
 <style>
   body {
     background: #14191f;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     color: #87ceeb;
     text-align: center;
     margin: 0;
@@ -88,12 +115,12 @@
   }
 
   .icons img {
-    width: 7%;
+    width: 4em;
     display: inline-block;
   }
 
   .about {
-    background: #13293D;
+    background: #13293d;
     padding: 3%;
     padding-bottom: 5%;
   }
@@ -103,10 +130,17 @@
     padding-left: 30%;
   }
 
+  @media only screen and (max-width: 600px) {
+    .about .width {
+      max-width: 90%;
+      padding-left: 5%;
+    }
+  }
+
   .footer {
     padding-top: 1%;
     padding-bottom: 1%;
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   a {
@@ -126,36 +160,12 @@
   }
 
   .projects .project :hover {
-    transition-duration: .2s;
+    transition-duration: 0.2s;
     font-size: 101%;
   }
 
   .fname {
     font-weight: 900;
-  }
-
-  .button-container {
-    display: flex;
-    justify-content: center;
-    min-height: 100%;
-  }
-
-  #go-down {
-    position: fixed;
-    bottom: 20px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: none;
-    border-radius: 200px;
-    max-height: 5rem;
-    max-width: 5rem;
-  }
-
-  .go-down {
-    height: 100%;
-    width: 100%;
   }
 
   html {
@@ -164,11 +174,13 @@
 </style>
 
 <script>
-  function shuffle(array) {  // Thanks, https://stackoverflow.com/a/2450976/9974823
-    var currentIndex = array.length, temporaryValue, randomIndex;
+  function shuffle(array) {
+    // Thanks, https://stackoverflow.com/a/2450976/9974823
+    var currentIndex = array.length,
+      temporaryValue,
+      randomIndex;
 
     while (0 !== currentIndex) {
-
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex -= 1;
 
@@ -182,7 +194,7 @@
 
   let sdm = document.getElementById("sdm");
 
-  possibles = ["Developer", "Moderator", "Inventor"]
+  possibles = ["Developer", "Moderator", "Inventor"];
   shuffle(possibles);
 
   sdm.innerText = possibles.join(" • ");
@@ -191,10 +203,15 @@
 <script>
   button = document.getElementById("go-down");
 
-  window.onscroll = function() {scrollFunction()};
+  window.onscroll = function () {
+    scrollFunction();
+  };
 
   function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
       button.style.display = "none";
     } else {
       button.style.display = "block";
